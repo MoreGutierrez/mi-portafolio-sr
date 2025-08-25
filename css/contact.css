@@ -1,0 +1,54 @@
+
+body{
+    background: url("../img/blur_blue_kitten.jpeg") no-repeat center center / cover;
+}
+
+/*CONTACT SECTION*/
+.contact-section form{
+  max-width: 80rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-section form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.contact-section form .input-box input,
+.contact-section form .input-box textarea{
+  width: 100%;
+  padding: 1.5rem;
+
+  font-size: 1.6rem;
+  color: var(--main-color);
+
+  background: rgba(255, 255, 255, 0.46);
+  backdrop-filter: blur(10px);
+  
+  border-radius: 0.8rem;
+  border: 0.25rem solid var(--main-color);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.312);
+  
+  margin: 0.7rem 0;
+  resize: none;
+}
+
+.contact-section form .input-box input::placeholder,
+.contact-section form .input-box textarea::placeholder {
+  color: var(--main-color);
+}
+
+.contact-section form .btn{
+  margin-top: 1rem;
+  color: var(--snd-bg-color);
+}
+
+.message-sent {
+  display: none;
+  color: green;
+  margin-top: 10px;
+}
